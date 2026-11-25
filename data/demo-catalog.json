@@ -1,0 +1,369 @@
+{
+  "documents": [],
+  "lessons": [
+    {
+      "id": "caesar",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Caesar · Mã hóa",
+      "summary": "Biểu diễn ký tự theo chỉ số 0–25 rồi dịch theo khóa.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "C = (P + k) mod 26",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Biểu diễn ký tự theo chỉ số 0–25 rồi dịch theo khóa."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "C = (P + k) mod 26"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "caesar-decrypt",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Caesar · Giải mã",
+      "summary": "Đảo chiều dịch để khôi phục ký tự.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "P = (C - k + 26) mod 26",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Đảo chiều dịch để khôi phục ký tự."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "P = (C - k + 26) mod 26"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "caesar-brute",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Caesar · Vét cạn",
+      "summary": "Liệt kê các khóa thay vì đoán duy nhất một bản rõ.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "Thử khóa 1…25",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Liệt kê các khóa thay vì đoán duy nhất một bản rõ."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "Thử khóa 1…25"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "affine",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Affine · Khóa và nghịch đảo",
+      "summary": "Kiểm tra khóa khả nghịch trước khi mã hóa hoặc giải mã.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "C = (aP + b) mod 26; gcd(a,26)=1",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Kiểm tra khóa khả nghịch trước khi mã hóa hoặc giải mã."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "C = (aP + b) mod 26; gcd(a,26)=1"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "monoalphabetic",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Monoalphabetic · Bảng thay thế",
+      "summary": "Mỗi ký tự được ánh xạ qua một hoán vị của bảng chữ cái.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "Bảng khóa phải có đủ 26 chữ, không lặp",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Mỗi ký tự được ánh xạ qua một hoán vị của bảng chữ cái."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "Bảng khóa phải có đủ 26 chữ, không lặp"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "playfair",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Playfair · Mã hóa theo cặp",
+      "summary": "Luyện bảng khóa và xử lý từng cặp ký tự; không phải bộ xử lý văn bản Playfair đầy đủ.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "Cùng hàng, cùng cột hoặc hình chữ nhật",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Luyện bảng khóa và xử lý từng cặp ký tự; không phải bộ xử lý văn bản Playfair đầy đủ."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "Cùng hàng, cùng cột hoặc hình chữ nhật"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "hill",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Hill · Biến đổi ma trận",
+      "summary": "Tính tích ma trận và vector ký tự theo modulo.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "C = K × P mod 26",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Tính tích ma trận và vector ký tự theo modulo."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "C = K × P mod 26"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "vigenere",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Vigenère · Khóa lặp",
+      "summary": "Dịch từng ký tự với vị trí khóa lặp theo chu kỳ.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "C[i] = (P[i] + K[i mod m]) mod 26",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Dịch từng ký tự với vị trí khóa lặp theo chu kỳ."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "C[i] = (P[i] + K[i mod m]) mod 26"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "vernam",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Vernam · Phép XOR",
+      "summary": "Luyện XOR bit và chuỗi bit; an toàn OTP còn phụ thuộc điều kiện khóa.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "C = P XOR K",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Luyện XOR bit và chuỗi bit; an toàn OTP còn phụ thuộc điều kiện khóa."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "C = P XOR K"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "rail-fence",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Rail Fence · Hai hàng",
+      "summary": "Tách các vị trí chẵn/lẻ và ghép lại; thẻ hiện tại giới hạn hai hàng.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "Chỉ số bắt đầu từ 0",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Tách các vị trí chẵn/lẻ và ghép lại; thẻ hiện tại giới hạn hai hàng."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "Chỉ số bắt đầu từ 0"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "columnar",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Hoán vị cột · Lưới 3×3",
+      "summary": "Luyện đọc ma trận theo cột và hoán vị thứ tự cột.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "Giữ nguyên ký tự, đổi vị trí",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Luyện đọc ma trận theo cột và hoán vị thứ tự cột."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "Giữ nguyên ký tự, đổi vị trí"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "feistel",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "Feistel · Vòng thu nhỏ",
+      "summary": "Luyện vòng Feistel trên số nguyên; không phải triển khai DES hoàn chỉnh.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "L′ = R; R′ = L XOR F(R,K)",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Luyện vòng Feistel trên số nguyên; không phải triển khai DES hoàn chỉnh."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "L′ = R; R′ = L XOR F(R,K)"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    },
+    {
+      "id": "des-aes",
+      "courseId": "security",
+      "moduleId": "classical",
+      "title": "DES/AES · Khái niệm",
+      "summary": "Chỉ có nội dung so sánh khái niệm trong demo; chưa có mã hóa DES/AES đầy đủ.",
+      "sourceReferences": [],
+      "content": {
+        "supplemental": true,
+        "sourceNote": "Nội dung demo độc lập do dự án biên soạn, không trích bài giảng.",
+        "formula": "Không dùng mật mã cổ điển để bảo vệ dữ liệu thật",
+        "stages": [
+          {
+            "title": "Mục tiêu",
+            "body": "Chỉ có nội dung so sánh khái niệm trong demo; chưa có mã hóa DES/AES đầy đủ."
+          },
+          {
+            "title": "Nguyên lý",
+            "body": "Không dùng mật mã cổ điển để bảo vệ dữ liệu thật"
+          },
+          {
+            "title": "Thực hành",
+            "body": "Viết code, chạy với input mẫu, đối chiếu kết quả rồi tự sửa."
+          }
+        ]
+      },
+      "exercises": []
+    }
+  ]
+}
